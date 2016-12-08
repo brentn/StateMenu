@@ -1,0 +1,90 @@
+state-menu.ui-accordion {
+  font-size:16px;
+  font-family:sans-serif;
+}
+state-menu.ui-accordion menu-panel h3.ui-accordion-header {
+  color: #9bcc60;
+  background-color: #ffffff;
+  font-size:120%;
+  font-weight:bold;
+  border: 1px solid #66942f;
+}
+state-menu.ui-accordion menu-panel h3.ui-accordion-header.ui-state-active {
+  color:#ffffff;
+  background-color: #9bcc60;
+}
+state-menu menu-section li:hover {
+  background-color:rgba(155,204,96,0.30);
+}
+
+
+state-menu.ui-accordion menu-panel>div.panel{
+  padding:10px;
+}
+state-menu menu-section {
+  position:relative;
+  display:block;
+  margin: 0 0 0 20px;
+}
+state-menu menu-section h4:hover {
+  cursor:pointer;
+  border-radius:4px;
+}
+state-menu div.panel>menu-section>h4{
+  clear:both;
+  position:relative;
+  border-radius:4px;
+  padding-left:8px;
+  margin-bottom:0px;
+  background-color:lightgrey;
+}
+state-menu div.panel>menu-section menu-section{
+  position:relative;
+  margin:0 0 0 10px;
+  padding:0;
+}
+state-menu div.panel>menu-section menu-section h4{
+  margin:0;
+}
+state-menu div.panel>menu-section menu-section h4:hover {
+  background-color:lightgrey;
+}
+state-menu menu-section ul{
+  list-style:none;
+  margin: 0;
+  padding-left:0;
+}
+state-menu menu-section ul li{
+  clear:both;
+  position:relative;
+  border-radius:4px;
+  cursor:pointer;
+}
+state-menu menu-section.collapsable {
+  display:block;
+}
+state-menu menu-item .profile-image {
+  float:left;
+  width:35px;
+  height:35px;
+  border-radius:4px;
+  object-fit:cover;
+}
+state-menu menu-item .details {
+  margin-left:45px;
+  font-size:0.8em;
+  height:35px;
+  margin:8px 0;
+}
+state-menu menu-item .details>span {
+  display:block;
+}
+state-menu menu-item .title,
+state-menu menu-item-2 .title {
+  font-weight:bolder;
+}
+
+state-menu menu-item-2 .details {
+  margin-left:20px;
+  font-size:0.7em;
+}

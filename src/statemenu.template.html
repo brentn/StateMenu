@@ -1,0 +1,7 @@
+<menu-panel ng-repeat='tab in MenuController.tabs' on-loaded="MenuController.panelLoaded();">
+  <h3>{{tab}}</h3>
+  <div class=panel>
+    <menu-section ng-repeat='section in MenuController.sections[$index]' title='{{section.title}}' items='section.items'>
+    </menu-section>
+  </div>
+</menu-panel>

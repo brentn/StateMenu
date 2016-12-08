@@ -1,0 +1,13 @@
+<h4 ng-click='$ctrl.expand($event)'><span ng-if='$ctrl.tree'>&#x2514</span>{{$ctrl.title}}</h4>
+<div ng-if='!$ctrl.items[0].Id'>
+  <menu-section class='collapsable' ng-repeat='section in $ctrl.items' title='{{section.title}}' items='section.items' tree='true' on-loaded='$ctrl.collapse()'>
+  </menu-section>
+</div>
+<div ng-if='$ctrl.items[0].Id'>
+  <ul ng-class="$ctrl.tree?'collapsable':''">
+    <li ng-repeat='item in $ctrl.items'>
+      <menu-item ng-if="!$ctrl.tree" id={{item.Id}} item='item'></menu-item>
+      <menu-item-2 ng-if="$ctrl.tree" id={{item.Id}} item='item'></menu-item-2>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,5 @@
+<img class='profile-image' src='/images/person.png' ng-src='{{MenuItemController.profileImageUrl}}' alt='profile image'/>
+<div class='details'>
+  <span class='title'>{{MenuItemController.item.VendorId || 'Invoice #'+MenuItemController.item.Id}}</span>
+  <span class='total'>{{MenuItemController.item.TotalAmount | currency }}</span>
+</div>
